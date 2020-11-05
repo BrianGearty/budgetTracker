@@ -1,4 +1,3 @@
-
 const CACHE_NAME = "static-cache-v2";
 const DATA_CACHE_NAME = "data-cache-v1";
 
@@ -9,10 +8,8 @@ const iconFiles = iconSizes.map(
 
 const staticFilesToPreCache = [
     "/",
-    '/index.html',
-    '/index.js',
-    "/app.js",
     "/db.js",
+    '/index.js',
     "/manifest.webmanifest",
     "/styles.css"
 ].concat(iconFiles);
