@@ -3,7 +3,7 @@ let myChart;
 
 fetch("/api/transaction")
   .then(response => {
-    return response.json();
+    console.log("fetch response", response.json());
   })
   .then(data => {
     // save db data on global variable
@@ -123,7 +123,7 @@ function sendTransaction(isAdding) {
     }
   })
   .then(response => {    
-    return response.json();
+    console.log("post respnse",response.json());
   })
   .then(data => {
     if (data.errors) {
